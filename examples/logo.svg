@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- A filled logo in the style of Figma/Illustrator exports: unitless px,
+     cubic and quadratic Bezier curves, a group transform, no strokes on most shapes. -->
+<circle cx="256" cy="256" r="232" stroke="#1E3A5F" stroke-width="16"/>
+<circle cx="338" cy="176" r="48" fill="#F59E0B"/>
+<g transform="translate(0 6)">
+<path d="M72 384L188 214Q204 192 220 214L292 316L330 266Q346 246 362 266L440 384Z" fill="#1E3A5F"/>
+</g>
+<path d="M104 396C156 370 204 422 256 396S356 370 408 396L408 412C356 386 308 438 256 412S156 386 104 412Z" fill="#14B8A6"/>
+</svg>

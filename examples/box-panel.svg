@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Laser-cut box side panel, 150 x 90 mm, 3 mm material.
+     Inkscape-style layers: red = cut, blue = engrave, "Template" is hidden. -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="160mm" height="100mm" viewBox="0 0 160 100">
+  <sodipodi:namedview id="namedview1" inkscape:document-units="mm"/>
+  <defs>
+    <circle id="vent" r="2.5"/>
+  </defs>
+
+  <g inkscape:groupmode="layer" inkscape:label="Template" id="layer-template"
+     style="display:none;fill:none;stroke:#999999;stroke-width:0.2">
+    <rect x="2" y="2" width="156" height="96"/>
+  </g>
+
+  <g inkscape:groupmode="layer" inkscape:label="Cut" id="layer-cut"
+     style="fill:none;stroke:#ff0000;stroke-width:0.4">
+    <path id="outline" d="M 5,5 H 15 V 8 H 25 V 5 H 35 V 8 H 45 V 5 H 55 V 8 H 65 V 5 H 75 V 8 H 85 V 5 H 95 V 8 H 105 V 5 H 115 V 8 H 125 V 5 H 135 V 8 H 145 V 5 H 155 V 15 H 152 V 25 H 155 V 35 H 152 V 45 H 155 V 55 H 152 V 65 H 155 V 75 H 152 V 85 H 155 V 95 H 145 V 92 H 135 V 95 H 125 V 92 H 115 V 95 H 105 V 92 H 95 V 95 H 85 V 92 H 75 V 95 H 65 V 92 H 55 V 95 H 45 V 92 H 35 V 95 H 25 V 92 H 15 V 95 H 5 V 85 H 8 V 75 H 5 V 65 H 8 V 55 H 5 V 45 H 8 V 35 H 5 V 25 H 8 V 15 H 5 V 5 Z"/>
+    <g id="mounting-holes">
+      <circle cx="15" cy="15" r="1.6"/>
+      <circle cx="145" cy="15" r="1.6"/>
+      <circle cx="15" cy="85" r="1.6"/>
+      <circle cx="145" cy="85" r="1.6"/>
+    </g>
+    <rect id="handle" x="55" y="14" width="50" height="12" rx="6"/>
+    <g id="vents">
+      <use xlink:href="#vent" x="112" y="45"/><use xlink:href="#vent" x="122" y="45"/>
+      <use xlink:href="#vent" x="132" y="45"/><use xlink:href="#vent" x="142" y="45"/>
+      <use xlink:href="#vent" x="112" y="55"/><use xlink:href="#vent" x="122" y="55"/>
+      <use xlink:href="#vent" x="132" y="55"/><use xlink:href="#vent" x="142" y="55"/>
+      <use xlink:href="#vent" x="112" y="65"/><use xlink:href="#vent" x="122" y="65"/>
+      <use xlink:href="#vent" x="132" y="65"/><use xlink:href="#vent" x="142" y="65"/>
+      <use xlink:href="#vent" x="112" y="75"/><use xlink:href="#vent" x="122" y="75"/>
+      <use xlink:href="#vent" x="132" y="75"/><use xlink:href="#vent" x="142" y="75"/>
+    </g>
+  </g>
+
+  <g inkscape:groupmode="layer" inkscape:label="Engrave" id="layer-engrave"
+     style="fill:none;stroke:#0000ff;stroke-width:0.4">
+    <rect id="label-frame" x="15" y="36" width="82" height="46" rx="3"/>
+    <circle id="ring" cx="37" cy="59" r="17"/>
+    <g id="leaf" transform="translate(37,59) rotate(-25)">
+      <path d="M 0,-15 C 9,-8 9,8 0,15 C -9,8 -9,-8 0,-15 Z"/>
+      <path d="M 0,-12 L 0,13"/>
+      <path d="M 0,-5 Q 3,-7 5,-10 M 0,-5 Q -3,-7 -5,-10"/>
+      <path d="M 0,3 Q 3.5,1 6,-2 M 0,3 Q -3.5,1 -6,-2"/>
+    </g>
+    <g id="airflow">
+      <path d="M 62,50 C 66,46 70,54 74,50 S 82,46 86,50 S 90,54 92,52"/>
+      <path d="M 62,59 C 66,55 70,63 74,59 S 82,55 86,59 S 90,63 92,61"/>
+      <path d="M 62,68 C 66,64 70,72 74,68 S 82,64 86,68 S 90,72 92,70"/>
+    </g>
+  </g>
+</svg>
