@@ -1,0 +1,5 @@
+# Normalize line endings in the repository; DXF and SVG are text formats.
+* text=auto
+*.dxf text
+*.svg text
+*.png binary

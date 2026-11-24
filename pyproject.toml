@@ -1,0 +1,78 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "svg-to-dxf"
+version = "0.1.0"
+description = "Convert SVG to DXF with the right size (mm/inch, DPI, viewBox), exact curves (SPLINE, ARC, CIRCLE, ELLIPSE) and layers from colors or Inkscape layers. Offline CLI and Python API for laser cutting, CNC and CAD."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Shahnawaz75" }]
+keywords = [
+    "svg",
+    "dxf",
+    "svg-to-dxf",
+    "svg2dxf",
+    "converter",
+    "laser-cutting",
+    "cnc",
+    "cad",
+    "autocad",
+    "inkscape",
+    "illustrator",
+    "lightburn",
+    "bezier",
+    "spline",
+    "dxf-r12",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Manufacturing",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+    "Topic :: Scientific/Engineering",
+    "Typing :: Typed",
+]
+dependencies = ["svgelements>=1.9.6", "ezdxf>=1.1"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+docs = ["matplotlib>=3.7"]
+
+[project.scripts]
+svg-to-dxf = "svg_to_dxf.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Shahnawaz75/svg-to-dxf"
+Issues = "https://github.com/Shahnawaz75/svg-to-dxf/issues"
+Documentation = "https://shahnawaz75.github.io/svg-to-dxf/"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/svg_to_dxf"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "README.md", "LICENSE", "CHANGELOG.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["B905"]
